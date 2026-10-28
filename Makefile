@@ -32,7 +32,7 @@ d.rebuild: ## Rebuild all containers
 d.config: ## Validate and view the resulted docker compose launch config (file)
 	$(docker_compose) config
 
-nginx.connnect: ## Connect to nginx container
+nginx.connect: ## Connect to nginx container
 	$(docker_compose) exec nginx sh
 
 nginx.logs: ## Show nginx container logs (with follow)
